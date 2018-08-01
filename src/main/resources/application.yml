@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: ''
+    url: jdbc:mysql://localhost/usersdb?autoReconnect=true&useSSL=false
+    username: root
+  mvc:
+    view:
+      prefix: /html/
+      suffix: .html
