@@ -18,9 +18,13 @@ public class UserServiceImpl implements UserService {
 	public User save(User user) {
 		return this.userRepository.save(user);
 	}
-
+@Override
 	public List<User> findAll() {
 		return this.userRepository.findAll();
+	}
+@Override
+	public void deleteUser(Long id) {
+		this.userRepository.deleteById(id);
 	}
 
 }
